@@ -1826,9 +1826,8 @@ public class LWC {
                 registerModule(new Factions());
             } catch (NoClassDefFoundError e) {
                 plugin.getLogger().warning("Failed to hook into Factions!");
-                this.log("Please make sure you are using an updated version of FactionsUUID.");
-                this.log("https://www.spigotmc.org/resources/factionsuuid.1035/");
-                plugin.getLogger().log(Level.FINE, "Unable to find necessary FactionsUUID classes:", e);
+                plugin.getLogger().warning("Please make sure you are using an updated version of FactionsUUID.");
+                plugin.getLogger().warning("https://www.spigotmc.org/resources/factionsuuid.1035/");
             }
         }
     }
